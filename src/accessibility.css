@@ -1,0 +1,35 @@
+/* OpenDyslexic Font Import */
+@font-face {
+    font-family: 'OpenDyslexic';
+    src: url('https://cdn.jsdelivr.net/npm/opendyslexic@2.1.0/fonts/OpenDyslexic-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@layer utilities {
+    .font-dyslexic {
+        font-family: 'OpenDyslexic', sans-serif !important;
+    }
+
+    .accessibility-high-contrast {
+        background-color: white !important;
+        color: black !important;
+    }
+
+    .accessibility-high-contrast * {
+        border-color: rgba(0, 0, 0, 0.2) !important;
+        background-color: white !important;
+        /* Flatten glassmorphism */
+        color: black !important;
+        box-shadow: none !important;
+    }
+
+    .accessibility-high-contrast .bg-msu {
+        background-color: black !important;
+        color: white !important;
+    }
+
+    .accessibility-high-contrast button {
+        border: 2px solid black !important;
+    }
+}

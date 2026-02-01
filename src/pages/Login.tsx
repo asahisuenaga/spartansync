@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useAuth } from "../context/SupabaseAuthContext";
+import spartanLogo from "../assets/spartan-logo.png";
 
 const Login = () => {
   const { signInWithEmail, signUpWithEmail, resendEmailConfirmation, authError } = useAuth();
@@ -61,8 +62,8 @@ const Login = () => {
 
         <div className="relative z-10 animate-fade-in">
           <div className="flex items-center gap-3">
-            <div className="flex size-10 items-center justify-center rounded-xl bg-white text-msu shadow-lg">
-              <span className="material-symbols-outlined text-2xl">sync</span>
+            <div className="flex size-14 items-center justify-center rounded-xl bg-white p-2 shadow-lg">
+              <img src={spartanLogo} alt="Spartan Sync" className="w-full h-full object-contain" />
             </div>
             <span className="font-display text-2xl font-bold tracking-tight">Spartan Sync</span>
           </div>
@@ -89,8 +90,8 @@ const Login = () => {
       <div className="flex flex-1 flex-col items-center justify-center p-8 lg:p-12 bg-campus-grey">
         <div className="w-full max-w-md animate-fade-in space-y-8 bg-white p-10 shadow-xl rounded-3xl border border-gray-100">
           <div className="lg:hidden flex justify-center mb-6">
-            <div className="flex size-14 items-center justify-center rounded-2xl bg-msu text-white shadow-lg">
-              <span className="material-symbols-outlined text-3xl">sync</span>
+            <div className="flex size-20 items-center justify-center rounded-2xl bg-white p-2 shadow-lg border border-slate-100">
+              <img src={spartanLogo} alt="Spartan Sync" className="w-full h-full object-contain" />
             </div>
           </div>
 

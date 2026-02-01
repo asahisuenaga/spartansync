@@ -79,7 +79,7 @@ const Login = () => {
         </div>
 
         <div className="relative z-10 flex gap-4 text-xs font-medium text-emerald-200/60">
-          <span>© 2024 Michigan State University</span>
+          <span>© 2026 Michigan State University</span>
           <span>•</span>
           <span>Privacy Policy</span>
         </div>

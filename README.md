@@ -1,52 +1,46 @@
-# PlayPal
+# Spartan Sync 🟢⚪️
 
-Minimal React + Vite + TypeScript app with Firebase authentication (Google) and Firestore, styled with Tailwind CSS.
+A campus connection app designed for Michigan State University students to find study groups, gym buddies, and social events.
 
-## Quick start
+## Features
 
-1. Create a Firebase project.
-2. Enable Google authentication (Firebase Console → Authentication → Sign-in method).
-3. Create a Firestore database.
-4. Add a web app in Firebase and copy the config values.
-5. Create a `.env` file in the project root:
+-   **Activity Feed**: Browse and filter events by **Social**, **Fitness**, or **Academics**.
+-   **RSVP System**: Join activities with a defined participant limit.
+-   **Accessibility First**:
+    -   **Screen Reader**: Integrated ElevenLabs TTS for high-quality, human-like event reading (including time and location).
+    -   **High Contrast Mode**: Toggleable high-contrast theme for better visibility.
+-   **User Profiles**: Supabase Authentication for secure login and profile management.
 
-```
-VITE_FIREBASE_API_KEY=your_api_key
-VITE_FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
-VITE_FIREBASE_PROJECT_ID=your_project_id
-VITE_FIREBASE_STORAGE_BUCKET=your_project.appspot.com
-VITE_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
-VITE_FIREBASE_APP_ID=your_app_id
-```
+## Tech Stack
 
-## Run locally
+-   **Frontend**: React, Vite, TypeScript, Tailwind CSS
+-   **Backend**: Supabase (Auth & Database)
+-   **Accessibility**: ElevenLabs API (Text-to-Speech)
 
-```
-npm install
-npm run dev
-```
+## Quick Start
 
-## Notes
+1.  **Clone the repo**:
+    ```bash
+    git clone https://github.com/niharika-kanw/SpartanSync.git
+    cd SpartanSync
+    ```
 
-- Firestore uses an `activities` collection for the activity feed.
-- Firebase config is loaded from Vite environment variables.
+2.  **Install dependencies**:
+    ```bash
+    npm install
+    ```
 
-## Activity schema
+3.  **Setup Environment Variables**:
+    Create a `.env` file in the root directory with the following keys:
+    ```env
+    VITE_SUPABASE_URL=your_supabase_url
+    VITE_SUPABASE_ANON_KEY=your_supabase_key
+    VITE_ELEVENLABS_API_KEY=your_elevenlabs_key
+    ```
 
-```
-Activity {
-  id: string
-  title: string
-  location: string
-  eventTime: timestamp
-  expiresAt: timestamp
-  maxParticipants: number
-  participants: string[]
-  createdBy: string
-  broadCategory: "Fitness" | "Social" | "Academics"
-  subCategory: string
-  activityType: string
-  description: string
-  createdAt: timestamp
-}
-```
+4.  **Run locally**:
+    ```bash
+    npm run dev
+    ```
+
+## Go Green! 🟢

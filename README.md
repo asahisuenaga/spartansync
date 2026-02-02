@@ -2,6 +2,10 @@
 
 A campus connection app designed for Michigan State University students to find study groups, gym buddies, and social events.
 
+<div style="display: flex; justify-content: center; gap: 20;">
+<img width=48% alt="image" src="https://github.com/user-attachments/assets/1fae6691-fbc8-44ab-a142-a22c94fab721"/> <img width=48% alt="image" src="https://github.com/user-attachments/assets/7ca59582-ec78-403b-b30a-55f9d7601bd4"/>
+</div>
+
 ## Features
 
 -   **Activity Feed**: Browse and filter events by **Social**, **Fitness**, or **Academics**.
